@@ -1,6 +1,7 @@
 const $=s=>document.querySelector(s);
 const state={mood:50,items:[],flags:{},steps:0,sound:true,lang:localStorage.getItem('checkout-lang')||'en',currentScene:null,pendingEnding:null,view:'start'};
-const bgm=new Audio('mystery-bgm.mp3'),bell=new Audio('bell.wav');bgm.loop=true;bgm.volume=.65;bell.volume=1;
+const audioBase='https://raw.githubusercontent.com/Rjmiyyy/rjmiyyy.github.io/main/game/';
+const bgm=new Audio(audioBase+'mystery-bgm.mp3'),bell=new Audio(audioBase+'bell.wav');bgm.loop=true;bgm.volume=.65;bell.volume=1;bgm.preload='auto';bell.preload='auto';
 const endNames=['Do Not Disturb','Night Shift','Best Friends Forever','The Honest Guest','Room Service','The 404 Error','Walk of Shame','The Real Checkout'];
 const scenes={
  wake:{chapter:'01 / ROOM 404',time:'03:33 AM',icon:'☎',title:'The Wake-Up Call',text:`<p>The phone rings before you remember having a name.</p><p>“Good morning,” whispers the receptionist. “Your checkout was <strong>yesterday</strong>. Please come downstairs. And do keep our other guest entertained.”</p><p>Something under the bed giggles.</p>`,choices:[['Answer politely. Ask for directions.','hall',5,'polite'],['Hang up and look under the bed.','under',12],['Barricade the door and go back to sleep.','sleep',-18],['Scream: “I want to speak to your manager.”','manager',-12]]},
