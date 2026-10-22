@@ -12,6 +12,11 @@
 </head>
 <body>
   <div class="noise"></div>
+  <div class="halloween-sky" aria-hidden="true">
+    <span class="moon"></span><span class="bat bat-one"></span><span class="bat bat-two"></span><span class="bat bat-three"></span>
+  </div>
+  <div class="cobweb web-left" aria-hidden="true"></div><div class="cobweb web-right" aria-hidden="true"></div>
+  <div class="dead-branch branch-left" aria-hidden="true"></div><div class="dead-branch branch-right" aria-hidden="true"></div>
   <main class="game-shell">
     <header>
       <a class="brand" href="./">CHECK<span>OUT</span></a>
@@ -27,6 +32,7 @@
     </header>
 
     <section id="startScreen" class="screen start-screen active">
+      <div class="jack-lantern" aria-hidden="true"><i class="pumpkin-eye left"></i><i class="pumpkin-eye right"></i><i class="pumpkin-mouth"></i></div>
       <div class="eyebrow">A HORROR STORY</div>
       <h1>YOU CAN<br>CHECK OUT.<br><em>CAN'T YOU?</em></h1>
       <p class="intro">You wake in Room 404 of a hotel that does not exist. The receptionist says there is one rule: keep the guest happy.</p>
@@ -64,6 +70,7 @@
     </section>
 
     <section id="resultScreen" class="screen result-screen">
+      <div class="result-ornament" aria-hidden="true"><i></i><span></span><i></i></div>
       <div id="resultIcon" class="result-icon">☠</div>
       <div class="result-label">YOUR STATUS</div>
       <h2 id="resultStatus">DIED!</h2>
@@ -72,6 +79,7 @@
     </section>
 
     <section id="endScreen" class="screen end-screen">
+      <div class="result-ornament end-ornament" aria-hidden="true"><i></i><span></span><i></i></div>
       <div id="endStamp" class="end-stamp">ENDING 1</div>
       <div id="endIcon" class="end-icon">☠</div>
       <h2 id="endTitle">DO NOT DISTURB</h2>
