@@ -16,6 +16,11 @@
     <header>
       <a class="brand" href="./">CHECK<span>OUT</span></a>
       <div class="header-actions">
+        <div class="lang-switch" aria-label="Language">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="zh-Hant">繁中</button>
+          <button class="lang-btn" data-lang="zh-Hans">简中</button>
+        </div>
         <button id="soundBtn" class="icon-btn" aria-label="Toggle sound">SOUND: ON</button>
         <button id="restartBtn" class="icon-btn hidden" aria-label="Restart game">RESTART</button>
       </div>
@@ -77,6 +82,7 @@
     </section>
   </main>
   <div id="flash" class="flash"></div>
+  <script src="i18n.js"></script>
   <script src="game.js"></script>
 </body>
 </html>
