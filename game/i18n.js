@@ -1,5 +1,5 @@
 const ZH={
- ui:{horror:'一個恐怖故事',hero:'你可以<br>退房。<br><em>真的可以嗎？</em>',intro:'你在一間不存在的酒店——404號房醒來。接待員說只有一條規則：讓另一位住客保持開心。',start:'按響服務鈴',tip:'建議佩戴耳機 · 每個選擇都很重要',soundOn:'聲音：開',soundOff:'聲音：關',restart:'重新開始',roommate:'你的室友',pockets:'口袋',empty:'空空如也，連手機也沒有。',way:'出口？',status:'你的狀態',view:'查看結局',again:'再次入住',endHint:'有些出口只在惡魔生氣時打開，有些則在他開心時打開。',choices:'選擇次數',mood:'惡魔心情',items:'奇怪物品',ending:'結局',approve:'惡魔滿意',disapprove:'惡魔不滿',undecided:'惡魔尚未決定'},
+ ui:{horror:'一個恐怖故事',hero:'你可以<br>退房。<br><em>真的可以嗎？</em>',intro:'你在一間不存在的酒店——404號房醒來。接待員說只有一條規則：讓另一位住客保持開心。',start:'按響服務鈴',tip:'每個選擇都很重要',soundOn:'聲音：開',soundOff:'聲音：關',restart:'重新開始',roommate:'你的室友',pockets:'口袋',empty:'空空如也，連手機也沒有。',way:'出口？',status:'你的狀態',view:'查看結局',again:'再次入住',endHint:'有些出口只在惡魔生氣時打開，有些則在他開心時打開。',choices:'選擇次數',mood:'惡魔心情',items:'奇怪物品',ending:'結局',approve:'惡魔滿意',disapprove:'惡魔不滿',undecided:'惡魔尚未決定'},
  moods:[['欣喜若狂','「我真想永遠留住你。」'],['覺得有趣','「你活著的時候有趣多了。」'],['感到好奇','「我還沒決定怎樣處置你。」'],['有點惱火','「小心點，我知道哪些牆會咬人。」'],['怒不可遏','「很好，現在我們終於互相了解了。」']],
  items:{halfkey:'404½鑰匙',mint:'薄荷糖',ash:'灰燼',scrap:'紙屑',invisible:'隱身',truth:'真相',candle:'蠟燭',bell:'銀鈴',token:'洗衣代幣',secret:'秘密',mirror:'鏡子',staffkey:'員工鑰匙',uniform:'制服',paid:'已付款'},
  scenes:{
