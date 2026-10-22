@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a090d">
+  <title>CHECK OUT — A 7-Minute Horror Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <main class="game-shell">
+    <header>
+      <a class="brand" href="./">CHECK<span>OUT</span></a>
+      <div class="header-actions">
+        <button id="soundBtn" class="icon-btn" aria-label="Toggle sound">SOUND: ON</button>
+        <button id="restartBtn" class="icon-btn hidden" aria-label="Restart game">RESTART</button>
+      </div>
+    </header>
+
+    <section id="startScreen" class="screen start-screen active">
+      <div class="eyebrow">A 7-MINUTE HORROR STORY</div>
+      <h1>YOU CAN<br>CHECK OUT.<br><em>CAN'T YOU?</em></h1>
+      <p class="intro">You wake in Room 404 of a hotel that does not exist. The receptionist says there is one rule: keep the guest happy.</p>
+      <button id="startBtn" class="primary-btn">RING THE BELL <span>→</span></button>
+      <p class="tiny">Headphones recommended · 8 endings · Choices matter</p>
+    </section>
+
+    <section id="gameScreen" class="screen game-screen">
+      <div class="story-panel">
+        <div class="scene-meta"><span id="chapter">01 / ROOM 404</span><span id="time">03:33 AM</span></div>
+        <div id="sceneIcon" class="scene-icon">◉</div>
+        <h2 id="sceneTitle">The Wake-Up Call</h2>
+        <div id="storyText" class="story-text"></div>
+        <div id="choices" class="choices"></div>
+      </div>
+
+      <aside class="demon-panel">
+        <div class="demon-card">
+          <div class="demon-label">YOUR ROOMMATE</div>
+          <div id="demonFace" class="demon-face" aria-label="A watching demon">
+            <div class="horn left"></div><div class="horn right"></div>
+            <div class="eye left"></div><div class="eye right"></div>
+            <div class="mouth"></div>
+          </div>
+          <div class="mood-row"><span id="moodName">AMUSED</span><span id="moodValue">50%</span></div>
+          <div class="meter"><div id="moodBar" class="meter-fill"></div></div>
+          <p id="demonQuote" class="demon-quote">“Let's see what kind of guest you are.”</p>
+        </div>
+        <div class="inventory">
+          <div class="side-title">POCKETS</div>
+          <div id="items" class="items"><span class="empty">Nothing. Not even a phone.</span></div>
+        </div>
+        <div class="progress-wrap"><span>WAY OUT?</span><span id="progressText">0%</span><div class="progress"><div id="progressBar"></div></div></div>
+      </aside>
+    </section>
+
+    <section id="endScreen" class="screen end-screen">
+      <div id="endStamp" class="end-stamp">ENDING 1 / 8</div>
+      <div id="endIcon" class="end-icon">☠</div>
+      <h2 id="endTitle">DO NOT DISTURB</h2>
+      <p id="endText"></p>
+      <div id="endStats" class="end-stats"></div>
+      <button id="againBtn" class="primary-btn">CHECK IN AGAIN <span>↻</span></button>
+      <p class="tiny">Some exits only open when the demon is angry. Some when it is happy.</p>
+    </section>
+  </main>
+  <div id="flash" class="flash"></div>
+  <script src="game.js"></script>
+</body>
+</html>
